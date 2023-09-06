@@ -7,7 +7,7 @@ function Home() {
     return (
         <>
             <Banner />
-            <IguruWidget />
+            {/* <IguruWidget /> */}
         </>
     )
 }

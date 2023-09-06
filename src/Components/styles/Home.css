@@ -25,7 +25,7 @@
 
 .Navbar_Listing {
     display: flex;
-    gap: 2.5em;
+    margin-right: 16.5em;
 }
 
 .Navbar_Listing .Nav_Links {
@@ -37,21 +37,12 @@
     font-weight: 500;
 }
 
-.Nav_Links::after {
-    content: '';
-    width: 100%;
-    border: 1px solid #7ED338;
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform .3s;
-    transform-origin: right;
+.Nav_Links:hover {
+    color: #006b9c;
 }
 
-.Nav_Links:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+.Nav_Links.active{
+    color : #006b9c;
 }
 
 

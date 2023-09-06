@@ -1,0 +1,53 @@
+.dropbtn-iguru {
+    width: 100vw;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.dropbtn-iguru>div>img {
+    display: none;
+}
+
+.content-iguru {
+    width: 14em;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -25%);
+    display: flex;
+    gap: 2.5em;
+    background-color: transparent;
+}
+
+.dropbtn-iguru>.content-iguru>a {
+    color: #b6b6b6;
+    text-transform: capitalize;
+}
+
+
+@media screen and (max-width : 769px) {
+    .dropbtn-iguru {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 22%;
+        left: 50%;
+        transform: translate(-8%);
+    }
+
+    .content-iguru {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2.5rem;
+    }
+
+}

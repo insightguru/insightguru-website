@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, NavLink } from "react-router-dom";
 import '../../styles/Home.css'
 import Logo from '../../../assets/main-logo.png'
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -20,10 +20,10 @@ function Navbar() {
                     <Link to='/'><img src={Logo} alt="Nav_logo_Image" /></Link>
                 </div>
                 <div className='Navbar_Listing'>
-                    <Link to='/contact' className='Nav_Links'>contact</Link>
-                    <Link to='https://staging.insightguru.com/sign-in' className='Nav_Links'>sign-in</Link>
-                    <Link to='https://staging.insightguru.com/sign-on/' className='Nav_Links'>sign-on</Link>
-                    {/* <IguruWidget /> */}
+                    <NavLink to='/contact' className='Nav_Links' activeClassName="active">contact</NavLink>
+                    {/* <Link to='https://staging.insightguru.com/sign-in' className='Nav_Links'>sign-in</Link>
+                    <Link to='https://staging.insightguru.com/sign-on/' className='Nav_Links'>sign-on</Link> */}
+                    <IguruWidget />
                 </div>
                 <label htmlFor="Nav-Toggle" className='Hum_burger_nav_icon'><GiHamburgerMenu /> </label>
             </div>
