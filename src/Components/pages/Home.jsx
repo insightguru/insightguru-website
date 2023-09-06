@@ -1,7 +1,6 @@
 import React from 'react'
 import '../styles/Home.css'
-import Banner from './pageComponents/banner'
-import IguruWidget from './pageComponents/IguruWidget'
+import Banner from './pageComponents/Banner'
 
 function Home() {
     return (
