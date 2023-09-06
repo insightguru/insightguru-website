@@ -4,11 +4,14 @@ import '../../styles/Home.css'
 
 function Banner() {
   return (
-    <div className='banner_container'>
-      <div className="banner_image">
-        <img loading='lazy' src={bannerImage} alt="bannerImage" />
+    <>
+      {/* // banner html is here  */}
+      <div className='banner_container'>
+        <div className="banner_image">
+          <img loading='lazy' src={bannerImage} alt="bannerImage" />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

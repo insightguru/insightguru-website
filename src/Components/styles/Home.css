@@ -33,7 +33,8 @@
     text-transform: capitalize;
     position: relative;
     width: max-content;
-    color: #7ED338;
+    color: #b6b6b6;
+    font-weight: 500;
 }
 
 .Nav_Links::after {
@@ -61,10 +62,13 @@
 
 
 /* //navbar responsive style is here  */
-.Nav-Toggle{
+/* //checkbox to toggle navbar  */
+.Nav-Toggle {
     display: none;
 }
-.Hum_burger_nav_icon{
+
+/* //humburger icon to click for toggling navbar */
+.Hum_burger_nav_icon {
     font-size: 1.7em;
     color: #7ED33A;
     cursor: pointer;
@@ -72,15 +76,15 @@
 }
 
 
-
-
+/* for Small screens, mobiles and tabs  */
+/* //media query for responsive navbar is here  */
 @media screen and (max-width : 769px) {
 
-    .Navbar{
+    .Navbar {
         padding-inline: 1rem;
     }
 
-    .Navbar_Listing{
+    .Navbar_Listing {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -88,21 +92,32 @@
         background-color: rgb(0, 0, 0);
         position: fixed;
         top: 4.5rem;
-        left : 100%;
+        left: 0;
         justify-content: flex-start;
         align-items: center;
         padding-top: 5em;
-        gap : 3.5em;
-        transition: .3s;
+        gap: 3.5em;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform .3s;
     }
 
-    .Hum_burger_nav_icon{
+    .Hum_burger_nav_icon {
         display: block;
     }
 
 
-    .Nav-Toggle:checked ~ .Navbar_Listing{
-        left : 0;
+    .Nav-Toggle:checked~.Navbar_Listing {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+
+    .Navbar_Listing::before {
+        content: '';
+        width: 100%;
+        border: 2px solid #7ED33A;
+        position: absolute;
+        top: 0;
     }
 
 }
@@ -129,8 +144,9 @@
 }
 
 
+/* for Small screens, mobiles and tabs  */
 /* //resposnive banner  */
-@media screen and (max-width : 769px){
+@media screen and (max-width : 769px) {
     .banner_container {
         height: 65vh;
     }

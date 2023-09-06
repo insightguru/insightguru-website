@@ -32,7 +32,7 @@ function Contact() {
                     {
                         contacts.map((contact, ind) => {
                             return (
-                                <div className="contacts" key={contact.title+ind+Math.random()*1000}>
+                                <div className="contacts" key={contact.title + ind + Math.random() * 1000}>
                                     <p className='contact_title'>{contact.title}</p>
                                     <a className='contact_details' href={`mailto:${contact.details}`}>{contact.details}</a>
                                 </div>

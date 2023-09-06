@@ -1,10 +1,10 @@
-.contact_us_Container{
+.contact_us_Container {
     width: 100%;
     height: 100vh;
     margin-top: 4.5rem;
 }
 
-.Contact_Details_Listing{
+.Contact_Details_Listing {
     width: 100%;
     height: 100%;
     padding: 2.5em;
@@ -13,19 +13,23 @@
     gap: 1em;
 }
 
-.contact_title{
-    font-size: 1.3em;
-    color: rgb(56, 55, 55);
+.contact_title {
+    font-size: 1.2em;
+    color: #666666;
+    font-weight: 500;
+
 }
 
-.contact_details{
+.contact_details {
     font-size: 1em;
     transition: .3s;
-    color: rgb(0, 0, 136);
-    letter-spacing: .6px;
+    color: #0a0a0a;
     text-transform: capitalize;
+    font-weight: 500;
+    word-wrap: break-word;
+    line-height: 1;
 }
 
-.contact_details:hover{
+.contact_details:hover {
     text-decoration: underline;
 }

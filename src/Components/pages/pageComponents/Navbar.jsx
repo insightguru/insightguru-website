@@ -3,6 +3,7 @@ import { Outlet, Link } from "react-router-dom";
 import '../../styles/Home.css'
 import Logo from '../../../assets/main-logo.png'
 import { GiHamburgerMenu } from 'react-icons/gi';
+import IguruWidget from './IguruWidget';
 
 
 
@@ -22,6 +23,7 @@ function Navbar() {
                     <Link to='/contact' className='Nav_Links'>contact</Link>
                     <Link to='https://staging.insightguru.com/sign-in' className='Nav_Links'>sign-in</Link>
                     <Link to='https://staging.insightguru.com/sign-on/' className='Nav_Links'>sign-on</Link>
+                    {/* <IguruWidget /> */}
                 </div>
                 <label htmlFor="Nav-Toggle" className='Hum_burger_nav_icon'><GiHamburgerMenu /> </label>
             </div>
