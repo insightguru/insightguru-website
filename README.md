@@ -1,1 +1,1 @@
-# Iguru
+# insightguru-website
