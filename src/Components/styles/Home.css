@@ -122,3 +122,11 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+/* //resposnive banner  */
+@media screen and (max-width : 769px){
+    .banner_container {
+        height: 65vh;
+    }
+}
