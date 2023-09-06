@@ -75,6 +75,11 @@
 
 
 @media screen and (max-width : 769px) {
+
+    .Navbar{
+        padding-inline: 1rem;
+    }
+
     .Navbar_Listing{
         display: flex;
         flex-direction: column;
