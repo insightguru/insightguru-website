@@ -1,0 +1,15 @@
+.Page_Text_404_Container {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.Page_Text_404_Container .Text_404 {
+    font-size: 2em;
+    color: red;
+}
+
+.Page_Text_404_Container .Text_404:nth-of-type(1) {
+    margin-top: 50px;
+}

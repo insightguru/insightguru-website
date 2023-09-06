@@ -1,0 +1,31 @@
+.contact_us_Container{
+    width: 100%;
+    height: 100vh;
+    margin-top: 4.5rem;
+}
+
+.Contact_Details_Listing{
+    width: 100%;
+    height: 100%;
+    padding: 2.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact_title{
+    font-size: 1.3em;
+    color: rgb(56, 55, 55);
+}
+
+.contact_details{
+    font-size: 1em;
+    transition: .3s;
+    color: rgb(0, 0, 136);
+    letter-spacing: .6px;
+    text-transform: capitalize;
+}
+
+.contact_details:hover{
+    text-decoration: underline;
+}
