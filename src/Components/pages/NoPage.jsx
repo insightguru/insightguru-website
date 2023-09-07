@@ -1,4 +1,3 @@
-import React from 'react'
 import '../styles/404.css'
 
 function NoPage() {
