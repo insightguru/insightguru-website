@@ -7,3 +7,5 @@
 3.>Open Terminal and Run Command => npm install
 
 4.>To Execute Site ==> npm run dev
+
+5.>To Build The Site Run Command => npm run build
