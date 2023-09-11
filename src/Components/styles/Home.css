@@ -1,15 +1,19 @@
 .Navbar {
     width: 100%;
     height: 4.5rem;
-    background-color: #111;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 3rem;
+    padding: 0px 10px 0px 10px;
     position: fixed;
     top: 0;
     left: 0;
+    border-top: 1px solid grey;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    margin: 0 0 10px;
 }
+
 
 .Nav_logo {
     width: 11rem;
@@ -23,117 +27,58 @@
     /* object-fit: cover; */
 }
 
-
-.Navbar_Listing {
-    display: flex;
-    margin-right: 16.5em;
+.dropDown_text {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.2rem;
+    letter-spacing: 0.00938em;
 }
 
-.Navbar_Listing .Nav_Links {
-    font-size: 1.2em;
-    text-transform: capitalize;
-    position: relative;
-    width: max-content;
-    color: #b6b6b6;
+
+
+.dropbtn {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
     font-weight: 400;
 }
 
-.Nav_Links::after {
-    content: "";
-    width: 100%;
-    border: 1px solid greenyellow;
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    height: 7.5em;
     position: absolute;
-    left: 0;
-    bottom: -3px;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-    transform-origin: right;
+    right: 10px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    padding: 5px 15px;
 }
 
-.Nav_Links:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+.dropdown-content a {
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: 400;
+    letter-spacing: 0.00938em;
+    font-size: 1.2rem;
 }
 
-.Nav_Links:hover {
-    color: #006b9c;
+.dropdown-content a:hover {
+    color: #2980B9;
 }
 
-.Nav_Links.active {
-    color: #006b9c;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-
-
-
-
-
-
-
-/* //navbar responsive style is here  */
-/* //checkbox to toggle navbar  */
-.Nav-Toggle {
-    display: none;
+.dropdown:hover .dropbtn {
+    background-color: #f1f1f1
 }
 
-/* //humburger icon to click for toggling navbar */
-.Hum_burger_nav_icon {
-    font-size: 1.7em;
-    color: #7ED33A;
-    cursor: pointer;
-    display: none;
-}
-
-
-/* for Small screens, mobiles and tabs  */
-/* //media query for responsive navbar is here  */
-@media screen and (max-width : 769px) {
-
-    .Navbar {
-        padding-inline: 1rem;
-    }
-
-    .Navbar_Listing {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(0, 0, 0);
-        position: fixed;
-        top: 4.5rem;
-        left: 0;
-        justify-content: flex-start;
-        align-items: center;
-        padding-top: 5em;
-        gap: 3.5em;
-        transform: scaleX(0);
-        transform-origin: left;
-        transition: transform .3s;
-    }
-
-    .Hum_burger_nav_icon {
-        display: block;
-    }
-
-
-    .Nav-Toggle:checked~.Navbar_Listing {
-        transform: scaleX(1);
-        transform-origin: right;
-    }
-
-    .Navbar_Listing::before {
-        content: '';
-        width: 100%;
-        border: 2px solid #7ED33A;
-        position: absolute;
-        top: 0;
-    }
-
-    .Nav_Links {
-        position: relative;
-    }
-
-}
 
 
 
@@ -146,9 +91,8 @@
 /* //banner section after navbar css is here  */
 .banner_container {
     width: 100%;
-    height: 70vh;
+    height: 88.94009216589862vh;
     margin-top: 4.5rem;
-    /* position:  relative; */
 }
 
 .banner_image {
@@ -159,16 +103,7 @@
 .banner_image img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
-}
-
-
-/* for Small screens, mobiles and tabs  */
-/* //resposnive banner  */
-@media screen and (max-width : 769px) {
-    .banner_container {
-        height: 65vh;
-    }
+    object-fit: cover;
 }
 
 

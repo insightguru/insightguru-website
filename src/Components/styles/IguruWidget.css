@@ -13,61 +13,19 @@
     display: none;
 }
 
-.content-iguru {
-    width: 14em;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -25%);
+.content-iguru{
     display: flex;
-    gap: 2.5em;
-    background-color: transparent;
-}
-
-.dropbtn-iguru>.content-iguru>a {
-    color: #b6b6b6;
-    text-transform: capitalize;
-    width: max-content;
-    position: relative;
-}
-
-.dropbtn-iguru>.content-iguru>a::after {
-    content: "";
-    width: 100%;
-    border: 1px solid greenyellow;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    left: 0;
-    bottom: -.4em;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-    transform-origin: right;
+    top: 6rem;
+    left: -2.2rem;
+    gap: 1.1rem;
 }
 
-.dropbtn-iguru>.content-iguru>a:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-
-@media screen and (max-width : 769px) {
-    .dropbtn-iguru {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        /* top: 18%; */
-        left: 50%;
-        transform: translate(-8%);
-    }
-
-    .content-iguru {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 2.5rem;
-        margin-top: 9.1em;
-    }
-
+.content-iguru a{
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1rem;
+    font-weight: 400;
 }

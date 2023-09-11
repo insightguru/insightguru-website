@@ -13,9 +13,15 @@
     gap: 1em;
 }
 
+.Contact_us_heading{
+    color: rgba(0,0,0,.87);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
 .contact_title {
     font-size: 1.2em;
-    color: #666666;
+    color: rgba(0, 0, 0, 0.54);
     font-weight: 400;
 
 }
@@ -23,8 +29,8 @@
 .contact_details {
     font-size: 1em;
     transition: .3s;
-    color: #0a0a0a;
-    text-transform: capitalize;
+    color: rgba(0,0,0,.87);
+    text-transform: lowercase;
     font-weight: 400;
     word-wrap: break-word;
     line-height: 1;

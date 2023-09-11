@@ -27,6 +27,7 @@ function Contact() {
         <>
             <div className="contact_us_Container">
                 <div className='Contact_Details_Listing'>
+                <p className='Contact_us_heading'>Contact</p>
 
 
                     {

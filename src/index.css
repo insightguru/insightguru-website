@@ -56,9 +56,10 @@ li{
 }
 
 html::-webkit-scrollbar {
-  width: 10px;
+  /* width: 10px; */
+  display: none;
 }
-
+/* 
 html::-webkit-scrollbar-thumb {
   background: #7dc832;
   border-radius: 5px;
@@ -68,4 +69,4 @@ html::-webkit-scrollbar-thumb {
 
 html::-webkit-scrollbar-track {
   background: #000;
-}
+} */

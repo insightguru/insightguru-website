@@ -1,8 +1,7 @@
 import { Outlet, Link, NavLink } from "react-router-dom";
 import '../../styles/Home.css'
 import Logo from '../../../assets/main-logo.png'
-import { GiHamburgerMenu } from 'react-icons/gi';
-import IguruWidget from './IguruWidget';
+import IguruWidget from "./IguruWidget";
 
 
 
@@ -14,17 +13,19 @@ function Navbar() {
 
             {/* //navbar is here  */}
             <div className="Navbar">
-                <input id="Nav-Toggle" name="Nav-Toggle" className='Nav-Toggle' type="checkbox" />
                 <div className="Nav_logo">
                     <Link to='/'><img src={Logo} alt="Nav_logo_Image" /></Link>
                 </div>
-                <div className='Navbar_Listing'>
-                    <NavLink to='/contact' className='Nav_Links' activeClassName="active">contact</NavLink>
-                    {/* <Link to='https://staging.insightguru.com/sign-in' className='Nav_Links'>sign-in</Link>
-                    <Link to='https://staging.insightguru.com/sign-on/' className='Nav_Links'>sign-on</Link> */}
-                    <IguruWidget />
+
+                <div class="dropdown">
+                    <button class="dropbtn">menu</button>
+                    <div class="dropdown-content">
+                        <NavLink to='/contact' className='Nav_Links' activeClassName="active">contact</NavLink>
+                        {/* <NavLink to='/contact' className='Nav_Links' activeClassName="active">sign-in</NavLink>
+                        <NavLink to='/contact' className='Nav_Links' activeClassName="active">sign-on</NavLink> */}
+                        <IguruWidget />
+                    </div>
                 </div>
-                <label htmlFor="Nav-Toggle" className='Hum_burger_nav_icon'><GiHamburgerMenu /> </label>
             </div>
 
             <Outlet />
