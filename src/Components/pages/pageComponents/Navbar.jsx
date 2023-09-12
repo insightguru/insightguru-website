@@ -2,6 +2,8 @@ import { Outlet, Link, NavLink } from "react-router-dom";
 import '../../styles/Home.css'
 import Logo from '../../../assets/main-logo.png'
 import IguruWidget from "./IguruWidget";
+import { IoMdArrowDropdown } from 'react-icons/io';
+
 
 
 
@@ -18,7 +20,7 @@ function Navbar() {
                 </div>
 
                 <div class="dropdown">
-                    <button class="dropbtn">menu</button>
+                    <button class="dropbtn">menu <IoMdArrowDropdown /></button>
                     <div class="dropdown-content">
                         <NavLink to='/contact' className='Nav_Links' activeClassName="active">contact</NavLink>
                         {/* <NavLink to='/contact' className='Nav_Links' activeClassName="active">sign-in</NavLink>
