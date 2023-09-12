@@ -20,7 +20,7 @@ function Navbar() {
                 </div>
 
                 <div class="dropdown">
-                    <button class="dropbtn">menu <IoMdArrowDropdown /></button>
+                    <button class="dropbtn">menu <IoMdArrowDropdown className="Navbar_menu_arrow" /></button>
                     <div class="dropdown-content">
                         <NavLink to='/contact' className='Nav_Links' activeClassName="active">contact</NavLink>
                         {/* <NavLink to='/contact' className='Nav_Links' activeClassName="active">sign-in</NavLink>

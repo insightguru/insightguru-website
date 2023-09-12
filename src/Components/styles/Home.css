@@ -80,6 +80,14 @@
     display: block;
 }
 
+.Navbar_menu_arrow{
+    font-size : 1.3rem;
+}
+.dropdown:hover .dropbtn .Navbar_menu_arrow{
+    transform: rotate(180deg);
+    transition: transform .3s ease-in-out;
+}
+
 .dropdown:hover .dropbtn {
     background-color: #f1f1f1
 }
