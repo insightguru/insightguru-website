@@ -59,7 +59,6 @@
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
-    /* padding: 5px 15px; */
     padding-top: .8rem;
     padding-left: 1rem;
     border-radius: 4px;
@@ -80,10 +79,11 @@
     display: block;
 }
 
-.Navbar_menu_arrow{
-    font-size : 1.3rem;
+.Navbar_menu_arrow {
+    font-size: 1.3rem;
 }
-.dropdown:hover .dropbtn .Navbar_menu_arrow{
+
+.dropdown:hover .dropbtn .Navbar_menu_arrow {
     transform: rotate(180deg);
     transition: transform .3s ease-in-out;
 }
@@ -118,43 +118,3 @@
     height: 100%;
     object-fit: cover;
 }
-
-
-
-/* 
-.contentOfBanner{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-inline: 3em;
-    gap: 1em;
-}
-
-.contentOfBanner p:nth-child(1){
-    font-size: 2em;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.contentOfBanner p:nth-child(2){
-    text-transform: capitalize;
-    font-weight: 400;
-    color: #202020;
-}
-
-.contentOfBanner button{
-    width: 10em;
-    font-size: 1rem;
-    padding: 4px;
-    letter-spacing: 1px;
-    background-color: black;
-    border: none;
-    border-radius: .2em;
-    color: #ffffff;
-    cursor: pointer;
-} */
