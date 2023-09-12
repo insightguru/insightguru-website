@@ -52,16 +52,19 @@
 }
 
 .dropdown-content {
-    display: none;
     height: 7.5em;
     position: absolute;
     right: 0px;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
-    padding-top: .8rem;
     padding-left: 1rem;
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+    gap: .5rem;
 }
 
 .dropdown-content a {
@@ -76,7 +79,7 @@
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
 }
 
 .Navbar_menu_arrow {
