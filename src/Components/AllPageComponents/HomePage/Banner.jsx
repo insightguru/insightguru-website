@@ -1,13 +1,13 @@
-import bannerImage from '../../../assets/bg.jpg'
-import '../../styles/Home.css'
+import bannerImage from "../../../assets/bg.jpg";
+import "../../styles/Home.css";
 
 function Banner() {
   return (
     <>
       {/* // banner html is here  */}
-      <div className='banner_container'>
+      <div className="banner_container">
         <div className="banner_image">
-          <img loading='lazy' src={bannerImage} alt="bannerImage" />
+          <img loading="lazy" src={bannerImage} alt="bannerImage" />
         </div>
         {/* <div className="contentOfBanner">
           <p>hello world...</p>
@@ -16,7 +16,7 @@ function Banner() {
         </div> */}
       </div>
     </>
-  )
+  );
 }
 
-export default Banner
+export default Banner;

@@ -1,12 +1,12 @@
-import '../styles/Home.css'
-import Banner from '../AllPageComponents/HomePage/Banner.jsx'
+import "../styles/Home.css";
+import Banner from "../AllPageComponents/HomePage/Banner.jsx";
 
 function Home() {
-    return (
-        <>
-            <Banner />
-        </>
-    )
+  return (
+    <>
+      <Banner />
+    </>
+  );
 }
 
-export default Home
+export default Home;
