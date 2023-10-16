@@ -1,6 +1,6 @@
 import { Outlet, Link, NavLink } from "react-router-dom";
 import "../../styles/Home.css";
-import Logo from "../../../assets/main-logo.png";
+import Logo from "../../../assets/main-logo.jpeg";
 // import IguruWidget from "./IguruWidget";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { useState } from "react";
