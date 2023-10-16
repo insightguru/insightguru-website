@@ -30,7 +30,7 @@ function Navbar() {
             <i class="fa-solid fa-user"></i>
           </div>
         </div>
-          :
+           :
         <div class="dropdown">
             <button class="dropbtn">menu <IoMdArrowDropdown className="Navbar_menu_arrow" /></button>
             <div class="dropdown-content">
