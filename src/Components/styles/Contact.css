@@ -1,7 +1,7 @@
 .contact_us_Container {
     width: 100%;
     height: 100vh;
-    margin-top: 4.5rem;
+    margin-top: 3rem;
 }
 
 .Contact_Details_Listing {
@@ -26,7 +26,7 @@
 
 }
 
-.contact_details {
+.contact_details_link , .contact_details {
     font-size: 1em;
     transition: .3s;
     color: rgba(0,0,0,.87);
@@ -36,6 +36,6 @@
     line-height: 1;
 }
 
-.contact_details:hover {
+.contact_details_link:hover {
     text-decoration: underline;
 }

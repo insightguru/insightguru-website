@@ -35,7 +35,7 @@ function Contact() {
                             return (
                                 <div className="contacts" key={contact.title + ind + Math.random() * 1000}>
                                     <p className='contact_title'>{contact.title}</p>
-                                    <a className='contact_details' href={`mailto:${contact.details}`}>{contact.details}</a>
+                                    <a className='contact_details_link' href={`mailto:${contact.details}`}>{contact.details}</a>
                                 </div>
                             )
                         })
@@ -49,7 +49,7 @@ function Contact() {
 
                     <div className="contacts">
                         <p className='contact_title'>Google Maps</p>
-                        <a className='contact_details' href='https://goo.gl/maps/Ejd7wDA4hm11mnWx6' target='_blank'>https://goo.gl/maps/Ejd7wDA4hm11mnWx6</a>
+                        <a className='contact_details_link' href='https://goo.gl/maps/Ejd7wDA4hm11mnWx6' target='_blank'>https://goo.gl/maps/Ejd7wDA4hm11mnWx6</a>
                     </div>
 
                 </div>

@@ -1,104 +1,110 @@
-:root{
-    --text-color : rgba(0, 0, 0, 0.54);
+:root {
+  --text-color: rgba(0, 0, 0, 0.54);
+  --common-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .Navbar {
-    width: 100%;
-    height: 3.7rem;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px 0px 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-top: 1px solid grey;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
-    margin: 0 0 10px;
+  width: 100%;
+  height: 3.7rem;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-top: 1px solid grey;
+  box-shadow: var(--common-box-shadow);
+  margin: 0 0 10px;
 }
 
-
 .Nav_logo {
-    /* width: 11rem; */
-    width : 12.544rem;
-    height: 3rem;
+  /* width: 11rem; */
+  width: 12.544rem;
+  height: 3rem;
 }
 
 .Nav_logo a img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    /* object-fit: cover; */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* object-fit: cover; */
 }
 
-
+@media (max-width: 400px) {
+  .Nav_logo {
+    width: 10rem;
+  }
+}
 
 .dropbtn {
-    background-color: transparent;
-    color: var(--text-color);
-    font-size: 1.2rem;
-    border: none;
-    cursor: pointer;
-    font-weight: 400;
-    letter-spacing: 0.00938em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .4rem .8rem;
-    gap: .3rem;
-    background-color: #f7f4f4;
-    border-radius: .3rem;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 400;
+  letter-spacing: 0.00938em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  gap: 0.3rem;
+  background-color: #f7f4f4;
+  border-radius: 0.3rem;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    height: 7.5em;
-    position: absolute;
-    right: 0px;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
-    padding-left: 1rem;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    display: none;
-    gap: .5rem;
+  height: 7.5em;
+  position: absolute;
+  right: 0px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: var(--common-box-shadow);
+  padding-left: 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+  gap: 0.5rem;
 }
 
 .dropdown-content a {
-    color: var(--text-color);
-    font-weight: 400;
-    letter-spacing: 0.00938em;
-    font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: 400;
+  letter-spacing: 0.00938em;
+  font-size: 1.2rem;
 }
 
 .dropdown-content a:hover {
-    color: #2980B9;
+  color: #2980b9;
 }
 
 .dropdown:hover .dropdown-content {
-    display: flex;
+  display: flex;
 }
 
 .Navbar_menu_arrow {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .dropdown:hover .dropbtn .Navbar_menu_arrow {
-    transform: rotate(180deg);
-    transition: transform .3s ease-in-out;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #f1f1f1
+  background-color: #f1f1f1;
 }
+
 
 
 
@@ -111,33 +117,39 @@
 
 
 /* //after login css for profile section  */
-.NavProfile{
-    display: flex;
-    gap : 10px;
+.NavProfile {
+  display: flex;
+  gap: 10px;
 }
 
-.NavProfile > .profile_email{
-    color : var(--text-color);
-    font-size: 12px;
-    letter-spacing: .1px;
-    align-self: self-end;
-    margin-bottom: 4px;
+.NavProfile > .profile_email {
+  color: var(--text-color);
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  align-self: self-end;
+  margin-bottom: 4px;
 }
 
-.profile_photo{
-    width: 3rem;
-    height: 3rem;
-    background-color: #e5e5e5!important;
-    border-radius: 99px;display: grid;
-    place-items: center;
-    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12)!important;
-    cursor: pointer;
+.profile_photo {
+  width: 3rem;
+  height: 3rem;
+  background-color: #e5e5e5 !important;
+  border-radius: 99px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12) !important;
+  cursor: pointer;
 }
 
-.profile_photo > i{
-    font-size: 1.667rem;
-    color: #ffffff;
+.profile_photo > i {
+  font-size: 1.667rem;
+  color: #ffffff;
 }
+
+
+
+
 
 
 
@@ -149,18 +161,18 @@
 
 /* //banner section after navbar css is here  */
 .banner_container {
-    width: 100%;
-    height: 88.94009216589862vh;
-    margin-top: 3.625rem;
+  width: 100%;
+  height: 88.94009216589862vh;
+  margin-top: 3.625rem;
 }
 
 .banner_image {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .banner_image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

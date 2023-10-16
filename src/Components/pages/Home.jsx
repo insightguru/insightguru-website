@@ -1,5 +1,5 @@
 import '../styles/Home.css'
-import Banner from './pageComponents/Banner'
+import Banner from '../AllPageComponents/HomePage/Banner.jsx'
 
 function Home() {
     return (
